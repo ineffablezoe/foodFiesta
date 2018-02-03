@@ -5,17 +5,26 @@ using UnityEngine;
 public class llamaController : MonoBehaviour {
 
 	Rigidbody2D rb;
+	Animator anim;
 
 	public float maxSpeed = 10f;
 	private bool facingRight = true;
 
 	void Start () {
+		//makes it so that we can use the rigidbody component
 		rb = GetComponent<Rigidbody2D> ();
+		//makes it so that we can use the animator controller
+		anim = GetComponent<Animator> ();
 	}
 
 	void FixedUpdate () {
+		//tells us how we want to move the character
 		float move = Input.GetAxis ("Horizontal");
 
+		//sets the speed in the animator controller
+		anim.SetFloat ("Speed", Mathf.Abs (move));
+
+		//makes the character itself move
 		rb.velocity = new Vector2 (move * maxSpeed, rb.velocity.y);
 
 		//if we're moving right and not facing right, flip us
