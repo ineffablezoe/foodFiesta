@@ -8,7 +8,7 @@ public class llamaController : MonoBehaviour {
 	Animator anim;
 
 	public float maxSpeed = 10f;
-	private bool facingRight = true;
+	private bool facingRight = false;
 
 	void Start () {
 		//makes it so that we can use the rigidbody component
