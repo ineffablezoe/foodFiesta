@@ -4,47 +4,35 @@ using UnityEngine;
 
 public class projectileDropper : MonoBehaviour {
 
-	//will help pick which item to drop
+	//just for shooting purposes
+	public GameObject player;
+
 	int selectionNumber;
 
-	//all of the items that can be dropped
 	GameObject burrito;
 	GameObject taco;
 	GameObject jalapeno;
 	GameObject bomb;
 
-	//will hold which of the items we selected to be dropped
 	GameObject droppedItem;
 
-	//keeps track of the time between items being dropped
-	public float timeLeft;
-
-	float initialTimeLeft;
-
-	//randomizes where items are dropped from
 	int xPosition;
 
 	// Use this for initialization
 	void Start () {
 
-		//gets all of the items from the resource folder
 		burrito = Resources.Load("burrito") as GameObject;
 		taco = Resources.Load("taco") as GameObject;
 		jalapeno = Resources.Load("jalapeno") as GameObject;
 		bomb = Resources.Load("bomb") as GameObject;
 
-		//sets the initial value of the time left so that we can reset the time later
-		initialTimeLeft = timeLeft;
 
 	}
 
 	// Update is called once per frame
 	void Update () {
-
-		//generates a random number to select an item
 		selectionNumber = Random.Range (0, 4);
 
-		//selects an item using the random number we generated
 		if (selectionNumber == 0) {
 			droppedItem = burrito;
 		} else if (selectionNumber == 1) {
@@ -54,17 +42,9 @@ public class projectileDropper : MonoBehaviour {
 		} else if (selectionNumber == 3) {
 			droppedItem = bomb;
 		}
-
-		//ticks the time down
-		timeLeft -= Time.deltaTime;
-
+			
 		//if (SceneManager.GetActiveScene().name != "character_selection"){
-		//drops an item when the time between item drops is up
-		if (timeLeft <= 0) {	
-			Drop ();
-			//resets the timer
-			timeLeft = initialTimeLeft;
-		}
+			Drop();
 		//}
 	}
 
@@ -80,12 +60,15 @@ public class projectileDropper : MonoBehaviour {
 
 	void OnTriggerEnter (Collider other)
 	{
-		if (other.gameObject.CompareTag ("bowl")) {
-			//makes the item go away when it touches the bowl
-			droppedItem.SetActive (false);
-		} else if (other.gameObject.CompareTag ("floor")) {
+<<<<<<< HEAD
+		if (other.gameObject.CompareTag ("floor")) {
 			//makes the item go away when it hits the floor so they don't accumulate
-			droppedItem.SetActive(false);
+			Destroy(droppedItem.gameObject);
+=======
+		if (other.gameObject.CompareTag ( "bowl"))
+		{
+			droppedItem.SetActive (false);
+>>>>>>> parent of 9e7383f... projectiles fall periodically
 		}
 	}
 }

@@ -1,9 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\projectileDropper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\scoreTracker.cs">
     <Files>
+<<<<<<< HEAD
       <File FileName="Assets\Scripts\llamaController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\projectileDropper.cs" Line="68" Column="6" />
+      <File FileName="Assets\Scripts\projectileDropper.cs" Line="85" Column="4" />
+      <File FileName="Assets\Scripts\scoreTracker.cs" Line="12" Column="5" />
+=======
+      <File FileName="Assets\Scripts\llamaController.cs" Line="11" Column="34" />
+      <File FileName="Assets\Scripts\projectileDropper.cs" Line="53" Column="38" />
+>>>>>>> parent of 9e7383f... projectiles fall periodically
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
