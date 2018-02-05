@@ -1,9 +1,10 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\projectileDropper.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\scoreTracker.cs">
     <Files>
-      <File FileName="Assets\Scripts\projectileDropper.cs" Line="69" Column="4" />
-      <File FileName="Assets\Scripts\scoreTracker.cs" Line="8" Column="3" />
+      <File FileName="Assets\Scripts\projectileDropper.cs" Line="76" Column="36" />
+      <File FileName="Assets\Scripts\floorProjectileDestroyer.cs" Line="7" Column="1" />
+      <File FileName="Assets\Scripts\scoreTracker.cs" Line="11" Column="15" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

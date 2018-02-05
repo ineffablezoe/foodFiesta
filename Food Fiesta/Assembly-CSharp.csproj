@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\floorProjectileDestroyer.cs" />
      <Compile Include="Assets\Scripts\llamaController.cs" />
      <Compile Include="Assets\Scripts\projectileDropper.cs" />
      <Compile Include="Assets\Scripts\scoreTracker.cs" />

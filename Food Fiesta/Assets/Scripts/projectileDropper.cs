@@ -73,7 +73,7 @@ public class projectileDropper : MonoBehaviour {
 	void Drop() {
 
 		//generates a number to decide where the item will be dropped from
-		xPosition = Random.Range (-15, 15);
+		xPosition = Random.Range (-13, 13);
 
 		//drops the item
 		Instantiate(droppedItem, new Vector3(xPosition, 5, 0), Quaternion.identity);
