@@ -64,7 +64,7 @@ public class scoreTracker : MonoBehaviour {
 	void Win() {
 
 		//sets the end text to say the winning message
-		endText.text = "Great Job!";
+		endText.text = "Great Job! Lola will be sure to make some new friends with the food you two caught!";
 		//sets the restart button to say replay
 		restartButtonText.text = "Replay";
 
@@ -78,7 +78,7 @@ public class scoreTracker : MonoBehaviour {
 	void Lose() {
 
 		//sets the end text to say the losing message
-		endText.text = "Uh oh! You lost. Keep trying!";
+		endText.text = "Uh oh! Lola caught a bomb that destroyed all of the food she collected! Try again so she has food for her new friends!";
 		//sets the restart button to say retry
 		restartButtonText.text = "Retry";
 

@@ -4,9 +4,9 @@
     <Files>
       <File FileName="Assets\Scripts\floorProjectileDestroyer.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\projectileDropper.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\scoreTracker.cs" Line="52" Column="6" />
-      <File FileName="Assets\Scripts\buttonController.cs" Line="17" Column="43" />
-      <File FileName="Assets\Scripts\llamaController.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\scoreTracker.cs" Line="81" Column="89" />
+      <File FileName="Assets\Scripts\buttonController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\llamaController.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
