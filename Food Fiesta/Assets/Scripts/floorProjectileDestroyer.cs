@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class floorProjectileDestroyer : MonoBehaviour {
 
@@ -10,5 +11,9 @@ public class floorProjectileDestroyer : MonoBehaviour {
 			//makes the item go away when it touches the bowl
 			Destroy(other.gameObject);
 		} 
+	}
+
+	public void PlayAgain(){
+		SceneManager.LoadScene ("mainScene");
 	}
 }
