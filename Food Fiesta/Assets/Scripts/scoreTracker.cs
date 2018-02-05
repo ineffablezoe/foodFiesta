@@ -36,18 +36,20 @@ public class scoreTracker : MonoBehaviour {
 			projectileName = other.gameObject.name;
 
 			//makes the item go away when it touches the bowl
-			Destroy(other.gameObject);
+			Destroy (other.gameObject);
 
-			//adds points according to the specific type of object
-			if (projectileName == "burrito(Clone)") {
-				score++;	
-			} else if (projectileName == "taco(Clone)") {
-				score++;	
-			} else if (projectileName == "jalapeno(Clone)") {
-				score = score + 10;	
-			} else if (projectileName == "bomb(Clone)") {
-				Lose ();
-			}
+			if(projectileDropper.gameInProgress == true){
+				//adds points according to the specific type of object
+				if (projectileName == "burrito(Clone)") {
+					score++;	
+				} else if (projectileName == "taco(Clone)") {
+					score++;	
+				} else if (projectileName == "jalapeno(Clone)") {
+					score = score + 10;	
+				} else if (projectileName == "bomb(Clone)") {
+					Lose ();
+				}
+			}	
 
 			//lets you win once you get 100 points
 			if (score >= 100) {
@@ -79,6 +81,8 @@ public class scoreTracker : MonoBehaviour {
 		endText.text = "Uh oh! You lost. Keep trying!";
 		//sets the restart button to say retry
 		restartButtonText.text = "Retry";
+
+		anim.SetBool ("Lose", true);
 
 		//stops the prijectiles from falling by setting the variable to false that is in hte conditional on the projectile dropper
 		projectileDropper.gameInProgress = false;
