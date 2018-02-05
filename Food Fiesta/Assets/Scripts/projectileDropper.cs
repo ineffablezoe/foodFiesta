@@ -16,15 +16,18 @@ public class projectileDropper : MonoBehaviour {
 	//will hold which of the items we selected to be dropped
 	GameObject droppedItem;
 
+	//keeps track of whether the game is in progress to know if it should drop items
+	public static bool gameInProgress = true;
+
 	//keeps track of the time between items being dropped
 	public float timeLeft;
 
+	//holds the start time of the timer so we can reset the timer
 	float initialTimeLeft;
 
 	//randomizes where items are dropped from
 	int xPosition;
 
-	// Use this for initialization
 	void Start () {
 
 		//gets all of the items from the resource folder
@@ -37,8 +40,7 @@ public class projectileDropper : MonoBehaviour {
 		initialTimeLeft = timeLeft;
 
 	}
-
-	// Update is called once per frame
+		
 	void Update () {
 
 		//generates a random number to select an item to drop
@@ -60,14 +62,11 @@ public class projectileDropper : MonoBehaviour {
 		timeLeft -= Time.deltaTime;
 
 
-		//if (SceneManager.GetActiveScene().name != "character_selection"){
-		//drops an item when the time between item drops is up
-		if (timeLeft <= 0) {	
+		if (timeLeft <= 0 && gameInProgress) {	
 			Drop ();
 			//resets the timer
 			timeLeft = initialTimeLeft;
 		}
-		//}
 	}
 
 	void Drop() {

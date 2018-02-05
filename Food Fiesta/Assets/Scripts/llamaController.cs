@@ -18,21 +18,25 @@ public class llamaController : MonoBehaviour {
 	}
 
 	void FixedUpdate () {
-		//tells us how we want to move the character
-		float move = Input.GetAxis ("Horizontal");
 
-		//sets the speed in the animator controller
-		anim.SetFloat ("Speed", Mathf.Abs (move));
+		//makes sure there's a game in progress before letting you move
+		if (projectileDropper.gameInProgress == true) {
+			//tells us how we want to move the character
+			float move = Input.GetAxis ("Horizontal");
 
-		//makes the character itself move
-		rb.velocity = new Vector2 (move * maxSpeed, rb.velocity.y);
+			//sets the speed in the animator controller
+			anim.SetFloat ("Speed", Mathf.Abs (move));
 
-		//if we're moving right and not facing right, flip us
-		if (move > 0 && !facingRight) {
-			Flip ();
-		//if we're moving right and not facing right, flip us
-		} else if (move < 0 && facingRight) {
-			Flip ();
+			//makes the character itself move
+			rb.velocity = new Vector2 (move * maxSpeed, rb.velocity.y);
+
+			//if we're moving right and not facing right, flip us
+			if (move > 0 && !facingRight) {
+				Flip ();
+				//if we're moving right and not facing right, flip us
+			} else if (move < 0 && facingRight) {
+				Flip ();
+			}
 		}
 	}
 
