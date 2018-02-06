@@ -1,0 +1,62 @@
+Initialize engine version: 5.5.1f1 (88d00a7498cd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: Intel(R) HD Graphics 6000 (ID=0x1626)
+    Vendor:   Intel
+    VRAM:     2111 MB
+    Driver:   20.19.15.4531
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.PlaymodeTestsRunner.dll into Unity Child Domain
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.Analytics.dll (this message is harmless)
+Loading C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\UnityEngine.Analytics.dll into Unity Child Domain
+- Completed reload, in  0.046 seconds
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\System.Core.dll (this message is harmless)
+Platform assembly: C:\Users\Zoe\Documents\GitHub\foodFiesta\Food Fiesta\Food Fiesta 1.2_Data\Managed\System.dll (this message is harmless)
+desktop: 1920x1080 60Hz; virtual: 1920x1080 at 0,0
+<RI> Initializing input.
+XInput1_3.dll not found. Trying XInput9_1_0.dll instead...
+<RI> Input initialized.
+<RI> Initialized touch support.
+UnloadTime: 5.265278 ms
+Unloading 5 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 7.015880 ms
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.263648 ms (FindLiveObjects: 0.034639 ms CreateObjectMapping: 0.023093 ms MarkObjects: 0.193085 ms  DeleteObjects: 0.010263 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.704987 ms
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 322.
+Total: 0.463149 ms (FindLiveObjects: 0.037205 ms CreateObjectMapping: 0.024376 ms MarkObjects: 0.270705 ms  DeleteObjects: 0.129579 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.722307 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.255309 ms (FindLiveObjects: 0.037205 ms CreateObjectMapping: 0.025017 ms MarkObjects: 0.179614 ms  DeleteObjects: 0.011546 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.583747 ms
+
+Unloading 25 unused Assets to reduce memory usage. Loaded Objects now: 322.
+Total: 0.422736 ms (FindLiveObjects: 0.039130 ms CreateObjectMapping: 0.037205 ms MarkObjects: 0.259158 ms  DeleteObjects: 0.085958 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.591445 ms
+
+Unloading 6 unused Assets to reduce memory usage. Loaded Objects now: 316.
+Total: 0.334211 ms (FindLiveObjects: 0.037847 ms CreateObjectMapping: 0.029508 ms MarkObjects: 0.254026 ms  DeleteObjects: 0.011546 ms)
+
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 4888 -> priority: 1 
